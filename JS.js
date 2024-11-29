@@ -107,23 +107,24 @@ Month()
 //3. Determine Type of Vehicle Based on Number of Wheels
 
 function Vehicle() {
+    let Vehicle_type=["It Is Bike Or Cycle","It Is Auto","It Is Car","It Is Truck"]
     let Wheels = 10;
     switch (true) {
         case (Wheels === 2):
-            console.log(`It Is Bike Or Cycle`);
+            console.log(`${Vehicle_type[0]}`);
             break;
         case (Wheels === 3):
-            console.log(`It Is Auto`);
+            console.log(`${Vehicle_type[1]}`);
             break;
         case (Wheels === 4):
-            console.log(`It Is Car`);
+            console.log(`${Vehicle_type[2]}`);
             break;
         case (Wheels === 6):
         case (Wheels === 8):
         case (Wheels === 10):
         case (Wheels === 12):
         case (Wheels === 14):
-            console.log(`It Is Truck`);
+            console.log(`${Vehicle_type[3]}`);
             break;
         default:
             console.log(`Unknown Vehicle Type`);
